@@ -1,0 +1,5 @@
+{
+  "command": "npm start",
+  "proxyPort": 5000,
+  "targetPort": 8000
+}
