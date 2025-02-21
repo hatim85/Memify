@@ -1,14 +1,17 @@
 import express from "express";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const router = express.Router();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-router.get('/me', (req, res) => {
-    const address = req.headers['x-address'];
-    if (!address) {
-        return res.status(401).json({ error: 'Not authenticated' });
-    }
-    console.log("Address: ",address)
-    res.json({ address });
+// Serve static files from the Vite build directory
+router.use(express.static(path.join(__dirname, "../vite-frontend/dist")));
+
+// Handle client-side routing by serving index.html for all routes
+router.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../vite-frontend/dist/index.html"));
 });
 
 export default router;
