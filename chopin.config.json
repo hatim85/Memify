@@ -1,0 +1,5 @@
+{
+  "command": "npx concurrently \"cd vite-frontend && npm run build -- --watch\" \"cd backend && npm start\"",
+  "proxyPort": 4000,
+  "targetPort": 8000
+}
