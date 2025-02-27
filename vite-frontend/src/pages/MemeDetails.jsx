@@ -15,7 +15,7 @@ const MemeDetails = () => {
   useEffect(() => {
     const fetchMeme = async () => {
       try {
-        const response = await fetch(`http://localhost:4000/memes/${id}`, {
+        const response = await fetch(`https://memify-8ao8.onrender.com/memes/${id}`, {
           method: "GET",
           credentials: "include",
         });
@@ -44,7 +44,7 @@ const MemeDetails = () => {
     setForking(true);
 
     try {
-      const response = await fetch("http://localhost:4000/fork", {
+      const response = await fetch("https://memify-8ao8.onrender.com/fork", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -85,7 +85,7 @@ const MemeDetails = () => {
       <h1 className="text-3xl font-bold">{meme.title}</h1>
 
       <img
-        src={`http://localhost:4000${meme.template}`}
+        src={`https://memify-8ao8.onrender.com${meme.template}`}
         alt={meme.title}
         className="w-1/2 mx-auto my-4 rounded-lg"
       />

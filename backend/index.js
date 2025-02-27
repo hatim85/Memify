@@ -14,7 +14,7 @@ const port = 8000;
 app.use(cookieParser());
 app.use(bodyParser.json());
 
-const allowedOrigins=["http://localhost:3000","http://localhost:4000"]
+const allowedOrigins=["http://localhost:3000","http://localhost:4000","https://memify-six.vercel.app"]
 connectDB();
 app.use(cors({
   origin: allowedOrigins, 
