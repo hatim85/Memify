@@ -11,7 +11,7 @@ const AllMemes = () => {
   useEffect(() => {
     const fetchMemes = async () => {
       try {
-        const response = await fetch("https://memify-8ao8.onrender.com/viewnft", {
+        const response = await fetch("https://memifygateway.vercel.app/viewnft", {
           method: "GET",
           credentials: "include"
         }
@@ -48,7 +48,7 @@ const AllMemes = () => {
             onClick={() => navigate(`/meme/${meme._id}`)}
           >
             <img
-              src={meme.template.startsWith("http") ? meme.template : `https://memify-8ao8.onrender.com${meme.template}`}
+              src={meme.template.startsWith("http") ? meme.template : `https://memifygateway.vercel.app${meme.template}`}
               alt={meme.title}
               className="w-full h-48 object-cover rounded-lg mb-4"
             />

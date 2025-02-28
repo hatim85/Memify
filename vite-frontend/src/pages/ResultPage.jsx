@@ -39,7 +39,7 @@ const ResultPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <img
-                src={`https://memify-8ao8.onrender.com${meme.template}`} // ✅ Show uploaded meme
+                src={`https://memifygateway.vercel.app${meme.template}`} // ✅ Show uploaded meme
                 alt="Meme"
                 className="rounded-lg shadow-md"
               />

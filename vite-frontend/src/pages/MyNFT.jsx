@@ -7,7 +7,7 @@ const MyNFT = () => {
   useEffect(() => {
     const fetchMemes = async () => {
       try {
-        const response = await fetch("https://memify-8ao8.onrender.com/mynfts", {
+        const response = await fetch("https://memifygateway.vercel.app/mynfts", {
           method: "GET",
           credentials: "include", // Ensure cookies are sent
           headers: {
@@ -43,7 +43,7 @@ const MyNFT = () => {
           {memes.map((meme) => (
             <div key={meme._id} className="bg-white rounded-lg shadow-md p-4">
               <img
-                src={meme.template.startsWith("http") ? meme.template : `https://memify-8ao8.onrender.com${meme.template}`}
+                src={meme.template.startsWith("http") ? meme.template : `https://memifygateway.vercel.app${meme.template}`}
                 alt={meme.title}
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
