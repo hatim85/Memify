@@ -27,7 +27,7 @@ function Login() {
     setLoading(true);
     try {
       // Check if user exists (Signin)
-      let response = await fetch("https://memifygateway.vercel.app/signin", {
+      let response = await fetch("https://memify-8ao8.onrender.com/signin", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ address: userAddress }),
@@ -36,7 +36,7 @@ function Login() {
 
       if (response.status === 404) {
         // If user not found, Sign up
-        response = await fetch("https://memifygateway.vercel.app/signup", {
+        response = await fetch("https://memify-8ao8.onrender.com/signup", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ address: userAddress }),

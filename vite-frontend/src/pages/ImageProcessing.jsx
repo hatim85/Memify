@@ -35,7 +35,7 @@ const ImageProcessing = () => {
     formData.append("template", selectedImage);
   
     try {
-      const response = await fetch("https://memifygateway.vercel.app/create", {
+      const response = await fetch("https://memify-8ao8.onrender.com/create", {
         method: "POST",
         credentials: "include",
         body: formData,
