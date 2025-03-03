@@ -16,9 +16,9 @@ This is a React-based web application that allows users to process images, gener
 ## Technologies Used
 
 - **React**: Frontend framework
+- **Node**: Backend
 - **React Router**: For handling navigation
 - **Chopin Framework**: Address management
-- **React Toastify**: For notifications
 - **Tailwind CSS**: For styling
 
 ## Installation
@@ -80,8 +80,3 @@ The application will run at `http://localhost:3000/`.
 | `/landing`    | LandingPage     | Introduction page               |
 | `/process`    | ImageProcessing | Process and create memes        |
 | `/result`     | ResultPage      | View meme processing results    |
-
-## License
-
-This project is licensed under the MIT License.
-
