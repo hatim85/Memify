@@ -11,7 +11,6 @@ This is a React-based web application that allows users to process images, gener
 - **NFT Exploration**: Browse through all available meme NFTs.
 - **My NFT Collection**: View your personal collection of meme NFTs.
 - **Meme Details**: See specific details about individual memes.
-- **Toast Notifications**: Provides real-time feedback using `react-toastify`.
 
 ## Technologies Used
 
@@ -28,23 +27,17 @@ To run the project locally, follow these steps:
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/your-repository.git
-   cd your-repository
+   git clone https://github.com/hatim85/Memify.git
+   cd Memify
    ```
 
-2. Install dependencies:
+2. Start the proxy server:
 
    ```sh
-   npm install
+   npx chopd
    ```
 
-3. Start the development server:
-
-   ```sh
-   npm start
-   ```
-
-The application will run at `http://localhost:3000/`.
+The application will run at `http://localhost:4000/`.
 
 ## Project Structure
 
